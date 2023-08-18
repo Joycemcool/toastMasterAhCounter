@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.filler-words-container {
+    display: flex;
+    max-width: 650px;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.filler-words-container-column{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+}
+.page-title h4{
+    font-size: 20px;
+    font-style: normal;
+    font-family: var(--font-title);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filler-words {
+    padding-top: 1rem; 
+    width: 100%;
+    /* height: 100vh; */
+    flex-direction: column;
+    display: flex;
+    background: #eee;
+    justify-content: center;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.analysis {
+    width: 363px;
+    height: 213px;
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.other-input input{
+    margin: 20px;
+    width: 364px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background: #ffffff;
+}
+.other-input input:focus {
+    border-color: transparent; /* Set the border color to transparent when focused */
+    outline: none; /* Remove the default focus outline */
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/* @media screen and (max-width: 550px){
+    .filler-words-container .word-block div {
+        flex-grow: 0;
+        width: 100%;
+        height: 100%;
+    }
+} */
