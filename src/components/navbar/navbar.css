@@ -1,0 +1,11 @@
+.navbar-menu{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar-title h4{
+    font-size: 20px;
+    font-weight: 200;
+}

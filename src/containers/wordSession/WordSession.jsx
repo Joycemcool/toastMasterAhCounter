@@ -9,7 +9,6 @@ const WordSession = ({count,setCount}) => {
      Ah:count.Ah + 1});
    };
 
-  //  Math.max(newValue, 0)
    const minusAhhandler = () => {
     setCount ({
       ...count,
@@ -100,16 +99,16 @@ const WordSession = ({count,setCount}) => {
     <div className='filler-words-container'>
 
     <div className='filler-words-container-column'>
-        <Session color={'#00c4f5'} unitHeight={'142px'} word={'Ah'} addHandler={addAhhandler} minusHandler={minusAhhandler}/>
-        <Session color={'#50D2CD'} unitHeight={'130px'} word={'Um'} addHandler={addUmhandler} minusHandler={minusUmhandler}/>
-        <Session color={'#7AE582'} unitHeight={'163px'} word={'Er'} addHandler={addErhandler} minusHandler={minusErhandler}/>
-        <Session color={'#004E64'} unitHeight={'89px'} word={'Well'} addHandler={addWellhandler} minusHandler={minusWellhandler}/>  
+        <Session color={'#00c4f5'}  word={'Ah'} addHandler={addAhhandler} minusHandler={minusAhhandler}/>
+        <Session color={'#50D2CD'}  word={'Um'} addHandler={addUmhandler} minusHandler={minusUmhandler}/>
+        <Session color={'#7AE582'}  word={'Er'} addHandler={addErhandler} minusHandler={minusErhandler}/>
+        <Session color={'#004E64'}  word={'Well'} addHandler={addWellhandler} minusHandler={minusWellhandler}/>  
     </div>
     <div className='filler-words-container-column'>
-        <Session color={'#24A18E'} unitHeight={'98px'} word={'So'} addHandler={addSohandler} minusHandler={minusSohandler}/>
-        <Session color={'#62D0AD'} unitHeight={'130px'} word={'Like'} addHandler={addLikehandler} minusHandler={minusLikehandler}/>
-        <Session color={'#004364'} unitHeight={'174px'} word={'But'} addHandler={addButhandler} minusHandler={minusButhandler}/>
-        <Session color={'#00c4f5'} unitHeight={'122px'} word={'Repeats'} addHandler={addRepeatshandler} minusHandler={minusRepeatshandler}/>
+        <Session color={'#24A18E'}  word={'So'} addHandler={addSohandler} minusHandler={minusSohandler}/>
+        <Session color={'#62D0AD'}  word={'Like'} addHandler={addLikehandler} minusHandler={minusLikehandler}/>
+        <Session color={'#004364'}  word={'But'} addHandler={addButhandler} minusHandler={minusButhandler}/>
+        <Session color={'#00c4f5'}  word={'Repeats'} addHandler={addRepeatshandler} minusHandler={minusRepeatshandler}/>
     </div>
   </div>
   )

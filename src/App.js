@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import { WordSession} from './containers'
 import './App.css'
 import Piechart from './containers/piechart/Piechart';
+import {Navbar} from './components';
 
 
 const App = () => {
@@ -19,21 +20,22 @@ const App = () => {
 
 
   return (
-    <div className='filler-words'>
-      <div className='page-title'>
-        <h4>Ah Counter</h4>
-      </div>
-      <div className='analysis'>
-          <Piechart count={count} />
-      </div>
-      <div className='other-input'>
-        <input type="text" placeholder='other filler sounds/words'/> 
-      </div>
-      <div className='filler-words-container'>
-        <WordSession  count={count} setCount={setCount}/>
+      <div className='filler-words'>
+        <Navbar />
+        <div className='app-container'>
+          <div className='analysis'>
+              <Piechart count={count} />
+          </div>
+          </div>
+        <div className='app-container'>
+          <input type="text" placeholder='other filler sounds/words'/> 
+        </div>
+        <div className='filler-words-container'>
+          <WordSession  count={count} setCount={setCount}/>
+        </div>
+
       </div>
 
-    </div>
   )
 }
 

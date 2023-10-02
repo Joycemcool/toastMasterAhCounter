@@ -5,7 +5,7 @@ const Session = ({unitHeight, color, word, addHandler, minusHandler}) => {
 
 
   return (
-    <div className='basic-session' style={{background:color, height:unitHeight}}>
+    <div className='basic-session' style={{background:color}}>
         <div className='session-word'>
           <p>{word}</p>
         </div>

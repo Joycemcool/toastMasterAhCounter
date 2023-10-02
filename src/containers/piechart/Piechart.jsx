@@ -41,14 +41,20 @@ const Piechart = ({count}) => {
 
   const options = {
     maintainAspectRatio: false,
-    responsive: true,
+    // responsive: true,
     plugins:{
       legend: {
+        layout: {
+          margin:{
+              // top:10,
+              // right:50
+          }
+        },
         position: 'left',
         labels: {
-          fontSize: 15,
-          padding: 3,
-        },
+          // fontSize: 35,
+          padding: 15,
+        }
       },
     }
   };
@@ -56,7 +62,7 @@ const Piechart = ({count}) => {
 
   return (
     <div className='piechart'>
-        <div style={{ padding:'20px', width:'100%' } }>
+        <div style={{ padding:'10px', width:'100%', height:'40vh' } }>
             <Pie data={pieChartData} options={options}/>
         </div>
     </div>
