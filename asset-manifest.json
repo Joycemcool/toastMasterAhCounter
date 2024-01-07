@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/toastMasterAhCounter/static/css/main.9a8dc173.css",
+    "main.js": "/toastMasterAhCounter/static/js/main.d60fd8ff.js",
+    "index.html": "/toastMasterAhCounter/index.html",
+    "main.9a8dc173.css.map": "/toastMasterAhCounter/static/css/main.9a8dc173.css.map",
+    "main.d60fd8ff.js.map": "/toastMasterAhCounter/static/js/main.d60fd8ff.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9a8dc173.css",
+    "static/js/main.d60fd8ff.js"
+  ]
+}
