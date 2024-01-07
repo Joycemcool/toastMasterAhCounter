@@ -24,9 +24,6 @@ body{
 
 .analysis {
     background-color: white;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     border-radius: 20px;
     padding: 2em;
     box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.35);
@@ -38,12 +35,11 @@ body{
     width: 100%;
     margin: 0 10%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     /* flex-wrap: wrap; */
 }
 .filler-words-container-column{
-    width: 50%;
-    margin:0 10%;
+    width: 45%;
     display: flex;
     flex-direction: column;
 }

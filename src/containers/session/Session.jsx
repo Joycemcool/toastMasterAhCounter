@@ -10,12 +10,12 @@ const Session = ({unitHeight, color, word, addHandler, minusHandler}) => {
           <p>{word}</p>
         </div>
         <div className='session-modifier'>
-          <div className='session-plus'>
+          {/* <div className='session-plus'> */}
               <button type='button' onClick={addHandler} >+</button>
-          </div>
-          <div className='session-minus'>
+          {/* </div> */}
+          {/* <div className='session-minus'> */}
               <button type='button'onClick={minusHandler} >-</button>
-          </div>
+          {/* </div> */}
         </div>
 
     </div>
